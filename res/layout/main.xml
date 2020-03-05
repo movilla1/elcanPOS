@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout101"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<TableRow android:id="@+id/tbr1">
+</TableRow>
+
+<TableRow
+    android:id="@+id/tableRow3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/sku"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/etSku"
+            android:layout_width="208dp"
+            android:layout_height="60dp"
+            android:hint="@string/typesku" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btQList"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dots" />
+
+    </LinearLayout>
+
+</TableRow>
+<TableRow android:id="@+id/tbr3">
+    <TableLayout
+        android:id="@+id/tableLayout201"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btScan"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical"
+                android:paddingTop="15dp"
+                android:text="@string/lastSold"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ListView
+                android:id="@+id/lvMFS"
+                android:layout_width="150dp"
+                android:layout_height="200dp" >
+            </ListView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow103"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/itemcount"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvCountMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/zero"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow104"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/ordertotal"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvTotalMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/zero"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </TableRow>
+
+    </TableLayout>
+
+ </TableRow>
+
+<TableRow android:id="@+id/tbr2" >
+
+    <TableLayout
+        android:id="@+id/tableLayout102"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow105"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btBrowsCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/browsbycateg" />
+
+            <Button
+                android:id="@+id/btQuery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/query" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow106"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btOrder"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/vieworder" />
+
+            <Button
+                android:id="@+id/btAdd"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add" />
+        </TableRow>
+    </TableLayout>
+</TableRow>
+
+</TableLayout>

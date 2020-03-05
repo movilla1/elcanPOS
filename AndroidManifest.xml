@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="1"
+      android:versionName="1.0" package="com.elcansoftware.elcanpos">
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:allowClearUserData="true" android:description="@string/descriptapp">
+        <activity  android:name="ElcanPOSActivity" 
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity  android:name="detailsElcanPos" 
+                  android:label="@string/app_name_details"
+                  >
+        </activity>
+        <activity  android:name="listMatchesElcanPos" 
+                  android:label="@string/app_name_listmatches">
+        </activity>
+        <activity  android:name="showOrderElcanPos"
+                  android:label="@string/app_name_showorder" android:screenOrientation="portrait">
+        </activity>
+        <activity  android:name="showSettingsElcanPos" 
+                  android:label="@string/app_name_settings">
+        </activity>
+         <activity  android:name="elcanposBrowseCategories" 
+                  android:label="@string/app_name_categories">
+        </activity>
+        <activity  android:name="showOrderListElcanPos" 
+                  android:label="@string/app_name_orderlist">
+        </activity>
+        <activity android:name="ElcanFolderSelect"
+            	 android:label="@string/app_name_folder_select">
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/tvMName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+</TextView>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:layout_below="@+id/tvMName" android:layout_alignParentLeft="true" android:id="@+id/tvMSku"></TextView>
+
+    <TextView
+        android:id="@+id/tvdollarsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvMSku"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tvMName"
+        android:text="@string/dollarsign"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+</TextView>
+
+    <TextView
+        android:id="@+id/tvMPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvMSku"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/tvdollarsign"
+        android:text="@string/zero"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+</RelativeLayout>
